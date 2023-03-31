@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Retorna senha</title>
+</head>
+<body>
+	<form th:method="post" th:object="${senhaDto}">
+		<input th:field="*{login}"  type="text"> </input>
+		<select th:field="*{tipo}">
+			<option  th:value="servidor">servidor</option>
+			<option th:value="aluno">aluno</option>
+		</select>
+		<input type="submit"/>
+	</form>
+
+</body>
+</html>
