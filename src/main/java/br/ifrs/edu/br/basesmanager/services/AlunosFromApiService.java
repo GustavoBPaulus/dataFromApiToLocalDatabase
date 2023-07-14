@@ -56,6 +56,7 @@ public class AlunosFromApiService {
 			aluno.setNome_completo(am.getNome_completo());
 			aluno.setSexo(am.getSexo());
 			
+			
 
 			alunos.add(aluno);
 		});

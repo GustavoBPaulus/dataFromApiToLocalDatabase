@@ -30,6 +30,10 @@ public class Aluno {
 	@Column
 	private String tipoAluno;
 	
+
+	
+	
+	
 	@OneToMany(mappedBy = "aluno")
 	private List<AlunoCurso> listaCursosAluno;
 	
@@ -82,5 +86,8 @@ public class Aluno {
 	public void setTipoAluno(String tipoAluno) {
 		this.tipoAluno = tipoAluno;
 	}
+	
+	
+	
 	
 }
